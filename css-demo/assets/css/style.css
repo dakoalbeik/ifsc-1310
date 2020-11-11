@@ -18,10 +18,37 @@ html {
   max-width:900px;
 }
 
+/* ---------------Responsive Images----------------- */
+.img-right{
+  float:right;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 10px 0 10px 20px;
+}
+.img-left{
+  float:left;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 10px 20px 10px 0;
+}
+.img-center{
+ display:block;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 20px auto;
+  
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+
+
 /* ---------------Global Styles----------------- */
 body{
   font-family: 'Raleway', sans-serif;
   margin:0;
+  line-height:1.5em;
 }
 
 header.primary{
@@ -41,6 +68,7 @@ header.primary{
   /* Shorthand  T,R,B,L */
   padding: 40px 40px 20px 40px;
 
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.3'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 header.primary h1{
@@ -84,7 +112,7 @@ header.primary nav ul li a:link, header.primary nav ul li a:visited{
   background-color:rgba(0,0,0,.4);
   padding: 8px 16px;
   border-radius:20px;
-  transition:.5s;
+  transition:.25s;
 }
 
 
@@ -92,14 +120,198 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
   background-color:rgba(0,0,0,.8);
 }
 
+#intro{
+  border-bottom:1px solid #c0c0c0;
+  border-top:5px solid #c0c0c0;
+  padding-bottom: 1.5em;
+}
 
+#intro p {
+  line-height:1.5em;
+}
 
+#intro h2{
+  color:#3b638b;
+}
 
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom:2.6rem;
+}
 
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding:.6em;
+  transition:.25s;
+  border-radius:10px;
+  font-size:.9rem;
+}
 
+#content article.post:hover{
+  box-shadow:0 4px 16px rgba(0,0,0,.4); /**/
+}
 
+#content .post figure{
+  margin:0;
+}
 
+#content article time, #content article figcaption, #content article footer{
+  font-size:.8rem;
+  text-transform:uppercase;
+  color:#c0c0c0;
+}
 
+#content article img{
+    border-radius:5px;
+
+}
+
+/*------Atribute Selector----- */
+aside[role="complementary"]{
+  background-color:#172635;
+  color:#ffffff;
+  padding:1.5rem;
+}
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+aside article.widget{
+  width: 40%;
+}
+
+aside a:link, aside a:visited{
+  color:#fff;
+  display:block;
+  margin-top:20px;
+  letter-spacing: 1.5px; /* to spread the letter apart */
+}
+
+aside article footer{
+  display:none;
+}
+
+aside a:hover, aside a:active{
+text-decoration:none; /* to remove under line when hovered over the links */
+}
+
+footer#colophon{
+  background-color:#3b638b;
+}
+
+footer a{
+  color:#ffffff;
+  
+}
+
+footer a:hover{
+  text-decoration:none;
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#fff;
+  text-align:center;
+  font-size:.8rem;
+  text-transform:uppercase;
+}
+#additional-elements h2{
+  
+  color:#3b638b;
+  border-bottom: 3px double #c0c0c0;
+}
+#additional-elements a:link, #additional-elements a:visited{
+  color:#3b638b;
+}
+#additional-elements a:visited, #additional-elements a:active{
+  text-decoration:none;
+}
+
+#additional-elements h3{
+  border-left:5px solid #3b638b;
+  padding: 5px 10px;
+}
+
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+table caption{
+  color:#3b638b;
+  padding:10px;
+  font-weight:bold;
+  font-size:1.4;
+}
+
+table th{
+  background-color:#172635;
+  color:#ffffff;
+  width:33%;
+  padding:10px;
+}
+
+table tr:nth-child(even){
+  background: rgba(0,0,0,.1);
+}
+
+table td {
+  border:1px solid #c0c0c0;
+  padding:5px;
+  
+}
+
+table tr:hover{
+   background: rgba(0,0,0,.3);
+}
+
+#additional-elements ol{
+  list-style-type:upper-roman;
+}
+
+#additional-elements ul ul{
+  list-style-type:square;
+}
+
+#additional-elements dl{
+  
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:1.0rem;
+}
+
+#additional-elements dd{
+  margin:0;
+}
+
+dd + dt{
+  margin-top:1.5rem;
+}
+
+#additional-elements blockquote{
+  background:rgba(0,0,0,.15);
+  padding: 40px 60px;
+  border:5px double grey;
+  border-radius:16px;
+  font-size:1.2em;
+}
+
+#additional-elements cite{
+  display:block;
+  font-size:.6em;
+  text-align:right;
+  margin-top:1.5rem;
+  font-weight:bold;
+}
 
 @media screen and (max-width:690px){
   
@@ -113,7 +325,6 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
   header.primary nav a{
     display:block;
   }
-  
   
 }
 
