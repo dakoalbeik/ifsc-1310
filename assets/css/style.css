@@ -17,12 +17,20 @@ body{
   font-family: 'Raleway', sans-serif;
   margin:0;
   line-height:1.5em;
+  
 }
 
 
 nav ul {
   display: flex;
   flex-direction:column;
+  
+}
+
+nav ul ul {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
 }
 
 li {
@@ -31,7 +39,7 @@ li {
   color:#ffffff;
   list-style-type:none;
   text-decoration:none;
-  margin:15px;
+  margin:10px;
    border-radius: 3px;
   
 }
@@ -39,12 +47,54 @@ li {
 nav ul a{
   text-decoration:none;
   color:#ffffff;
-  padding:15px;
-  border-radius: 31px;
+  padding:10px;
+  border-radius: 10px;
   background-color:#007aff;
 }
 
+.container {
+  display:block;
+max-width: 900px;
+margin-left:auto;
+margin-right:auto;
+margin-top:50px;
 
+}
+
+#colophon {
+      background-color: #3b638b;
+      color: #ffffff;
+      height:30px;
+      margin-bottom: 0;
+      padding-left: 10px;
+    }
+footer a {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.article {
+  border-top:1px solid #c0c0c0;
+  padding-top:30px;
+  margin-top:80px;
+}
+
+  a:link, a:visited{
+  background-color: purple;
+  background-color: #3b638b; /*tabs*/
+  transition:.25s;
+}
+  a:hover, a:active{
+  background-color:rgba(237,106,90,0.9);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius:3px;
+
+}
 /* ul li {
    align-content: space-around; 
 }

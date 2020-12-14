@@ -1,3 +1,4 @@
+
 .container{
   width:80vw;
   margin:40px auto;
@@ -10,17 +11,19 @@
       background-color: #E0D8DE;
       padding-bottom: 25px;
       background:url("../img/pic.jpg") no-repeat bottom center / 1920px 1060px;
+      height:425px;
+      margin-bottom: 50px;
     }
     h1 a {
       text-decoration: none;
-      color: #4B3B47;
-      text-shadow: 4px 4px #CFD2B2;
+      color: #ED6A5A;
+      text-shadow: 5px 5px #5D576B;
     }
     header.primary nav ul{
   display:flex;
   flex-direction:row;
   justify-content:space-around;
-  background-color: #6A6262;
+  background-color: #5D576B; /* top bar */
   padding: 8px;
   margin-top: 0;
 }
@@ -32,28 +35,31 @@
   color:#ffffff;
   text-decoration:none;
   background-color: purple;
-  background-color: #4B3B47;
+  background-color: #ED6A5A; /*tabs*/
   padding: 5px 30px;
   border-radius:3px;
   transition:.25s;
 }
  header.primary nav ul li a:hover, header.primary nav ul li a:active{
-  background-color:rgba(75,59,71,0.6);
+  background-color:rgba(237,106,90,0.9);
+  padding: 6px 31px;
+  border-radius:3px;
+
 }
    h1 {
-      font-size: 9em;
-      margin-top: 190px;
+      font-size: 5em;
+      margin-top:125px;
     }
    .primary h2 {
       position: relative;
       text-align: right;
-      margin-top: 252px;
+      margin-top: 100px;
       padding-right: 20px;
       font-size: 40px;
-      color: #4B3B47;
+      color: #ED6A5A;
       padding-bottom: 10px;
-      border-bottom:3px solid #101935;
-      text-shadow: 1px 1px #CFD2B2;
+      border-bottom:3px solid #ED6A5A;
+      text-shadow: 1px 1px #5D576B;
     }
     
 h6 {
@@ -63,29 +69,30 @@ h6 {
    #articles{
 display:flex;
 flex-direction:row;
-justify-content:space-between;
+justify-content:space-around;
 border-bottom:1px solid #c0c0c0;
 padding-bottom: 20px;
 padding-right: 15px;
 padding-left: 15px;
-background-color: #CFD2B2;
+background-color: #9BC1BC; /*background*/
 }
 #info{
 display:flex;
 flex-direction:row;
-justify-content:space-between;
+justify-content:space-around;
 border-bottom:1px solid #c0c0c0;
 padding-bottom: 20px;
 padding-right: 15px;
 padding-left: 15px;
-background-color: #CFD2B2;
+background-color: #9BC1BC; /*background*/
 }
 .post{
-  width:30%;
-  padding:.7em;
+  width:20%;
+  text-align:center;
+  padding: 15px;
   border-radius:3px;
   font-size:.9rem;
-  background-color: #9C9990
+  background-color: #F4F1BB
 }
 #articles header {
   text-align: center;
@@ -94,7 +101,7 @@ background-color: #CFD2B2;
   text-align: center;
 }
 .title {
-  background-color: #CFD2B2;
+  background-color: #9BC1BC;
   margin-bottom: 0;  
   padding: 30px;
   text-align: center;
@@ -103,7 +110,8 @@ background-color: #CFD2B2;
 #img {
     float:right;
     margin-right: 0;
-    margin-top:60px;
+    margin-top:70px;
+    margin-bottom:70px;
 }
 #img2 {
   display:flex;
@@ -128,44 +136,61 @@ background-color: #CFD2B2;
   
 }
 
-
-details {
-  padding:25px;
-  background-color: #CFD2B2;
+.about {
+  background-color: #F4F1BB;
   margin-top: 30px;
+  padding:25px;
+  border-radius:3px;
   margin: 15px;
-  border-radius:3px;
-}
-.summary {
-  background-color:#9C9990;
-  padding: 10px;
-  border-radius:3px;
-  padding-top:30px;
+  max-width:900px;
+  margin-left: auto;
+  margin-right: auto;
+
   
 }
 
-summary {
-  background-color: #9C9990;
-  margin-bottom: 15px;
-  padding:10px;
-  border-radius:3px;
-}
-
-.about {
-  background-color: #CFD2B2;
-  margin-top: 30px;
-  padding:25px;
-  border-radius:3px;
-  margin: 15px;
+#about {
+  	overflow: hidden;
 }
 
 body {
       margin: 0;
-      background-color: #E0D8DE;
+      background-color: #E6EBE0;
+     font-family: 'Roboto', sans-serif;
     }
 
+
+.faq {
+	max-width: 900px;
+  margin: 50px auto 130px auto;
+ 
+ 
+}
+.faq h3 {
+	background: #9BC1BC url(images/arrow-square.gif) 
+    no-repeat right -51px;
+	padding: 7px 15px;
+	margin: 1px;
+  cursor: pointer;
+  transition:.25s;
+  border-radius: 5px;
+  
+}
+.faq h3:hover {
+	background-color: rgba(93, 87, 107,.65);
+}
+.faq h3.active {
+	background-position: right 5px;
+}
+.faq p {
+	background: #F4F1BB;
+	margin: 0;
+	padding: 10px 15px 20px;
+  border-radius: 5px;
+  
+}
 #colophon {
-      background-color: #6A6262;
+      background-color: #5D576B;
       color: #ffffff;
       padding-left: 10px;
       margin-bottom: 0;
@@ -174,3 +199,11 @@ footer a {
   text-decoration: none;
   color:#ffffff;
 }
+#colophonn {
+  
+  background-color: #5D576B;
+      color: #ffffff;
+      padding-left: 10px;
+      margin-bottom: 0;
+}
+
